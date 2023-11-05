@@ -2,10 +2,16 @@
   "name": "luminar",
   "type": "module",
   "version": "0.0.1",
+  "exports": {
+    ".": "./lib/index.ts",
+    "./index.scss": "./lib/index.scss",
+    "./index.css": "./dist/index.css"
+  },
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
+    "postbuild": "sass lib/index.scss dist/index.css",
     "preview": "astro preview",
     "astro": "astro"
   },
