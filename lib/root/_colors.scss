@@ -1,0 +1,73 @@
+@use "sass:map";
+
+$appColors: (
+  "accent": #39a7ff,
+  "dark": #222222,
+  "light": #fafafa,
+);
+
+$themeColors: (
+  "main": (
+    "light": (
+      "text": var(--color-dark),
+      "bg": var(--color-light),
+      "fg": var(--color-dark),
+    ),
+    "dark": (
+      "text": var(--color-light),
+      "bg": var(--color-dark),
+      "fg": var(--color-light),
+    ),
+  ),
+  "accent": (
+    "light": (
+      "text": var(--color-accent),
+      "bg": var(--color-accent),
+      "fg": var(--color-light),
+    ),
+    "dark": (
+      "text": var(--color-accent),
+      "bg": var(--color-accent),
+      "fg": var(--color-light),
+    ),
+  ),
+);
+
+:root {
+  @each $color, $value in $appColors {
+    --color-#{$color}: #{$value};
+  }
+
+  @each $color, $data in $themeColors {
+    @each $variant, $value in map.get($data, "light") {
+      --theme-color-#{$color}-#{$variant}: #{$value};
+    }
+
+    @media (prefers-color-scheme: dark) {
+      @each $variant, $value in map.get($data, "dark") {
+        --theme-color-#{$color}-#{$variant}: #{$value};
+      }
+    }
+  }
+}
+
+@each $color, $value in $appColors {
+  .text-#{$color} {
+    color: var(--color-#{$color});
+  }
+
+  .background-#{$color} {
+    background-color: var(--color-#{$color});
+  }
+}
+
+@each $color, $data in $themeColors {
+  .theme-#{$color}-text {
+    color: var(--theme-color-#{$color}-text);
+  }
+
+  .theme-#{$color} {
+    background-color: var(--theme-color-#{$color}-bg);
+    color: var(--theme-color-#{$color}-fg);
+  }
+}

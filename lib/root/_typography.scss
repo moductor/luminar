@@ -1,0 +1,92 @@
+@use "sass:map";
+
+$styles: (
+  "display-1": (
+    "size": 4rem,
+    "weights": (
+      "medium": 500,
+      "bold": 700,
+      "black": 900,
+    ),
+  ),
+  "display-2": (
+    "size": 3rem,
+    "weights": (
+      "medium": 500,
+      "bold": 700,
+      "black": 900,
+    ),
+  ),
+  "heading-1": (
+    "size": 2.25rem,
+    "weights": (
+      "medium": 500,
+      "bold": 700,
+      "black": 900,
+    ),
+  ),
+  "heading-2": (
+    "size": 1.5rem,
+    "weights": (
+      "medium": 500,
+      "bold": 700,
+      "black": 900,
+    ),
+  ),
+  "heading-3": (
+    "size": 1rem,
+    "weights": (
+      "semi-bold": 600,
+      "bold": 700,
+      "black": 900,
+    ),
+  ),
+  "subheading-1": (
+    "size": 1.25rem,
+    "weights": (
+      "regular": 400,
+      "semi-bold": 600,
+    ),
+  ),
+  "subheading-2": (
+    "size": 1.125rem,
+    "weights": (
+      "regular": 400,
+      "semi-bold": 600,
+    ),
+  ),
+  "body": (
+    "size": 1rem,
+    "weights": (
+      "regular": 400,
+      "bold": 700,
+    ),
+  ),
+  "caption": (
+    "size": 0.625rem,
+    "weights": (
+      "regular": 400,
+      "bold": 700,
+    ),
+  ),
+);
+
+:root {
+  --font-family: "Inter", sans-serif;
+
+  @each $style, $data in $styles {
+    --font-#{$style}-size: #{map.get($data, "size")};
+    @each $weight, $value in map.get($data, "weights") {
+      --font-#{$style}-#{$weight}: #{$value};
+    }
+  }
+}
+
+@each $style, $data in $styles {
+  @each $weight, $value in map.get($data, "weights") {
+    .font-#{$style}-#{$weight} {
+      font-size: var(--font-#{$style}-size);
+      font-weight: var(--font-#{$style}-#{$weight});
+    }
+  }
+}

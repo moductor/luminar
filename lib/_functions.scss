@@ -1,0 +1,11 @@
+@function lighter($color, $percentage) {
+  @return color-mix(in srgb, $color, white $percentage);
+}
+
+@function darker($color, $percentage) {
+  @return color-mix(in srgb, $color, black $percentage);
+}
+
+@function alpha($color, $percentage) {
+  @return color-mix(in srgb, $color, transparent #{100% - $percentage});
+}

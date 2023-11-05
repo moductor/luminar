@@ -1,8 +1,19 @@
 @use "./_reset.scss";
+@use "./_colors.scss";
+@use "./_typography.scss";
 
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
+
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: var(--font-family);
+}
+
+html,
+body {
+  height: 100%;
 }
