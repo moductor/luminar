@@ -2,7 +2,7 @@
 import { getValues, default as styles } from "./styles";
 
 type Props = {
-  style: string;
+  style?: string;
 };
 
 const { style = styles.body.regular } = Astro.props;
