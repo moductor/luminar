@@ -1,0 +1,15 @@
+---
+import { getValues, default as styles } from "./styles";
+
+type Props = {
+  style: string;
+};
+
+const { style = styles.body.regular } = Astro.props;
+
+if (!getValues().includes(style)) {
+  throw new Error(`${style} is not a valid text style!`);
+}
+---
+
+<span class={style}><slot /></span>
