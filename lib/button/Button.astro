@@ -1,0 +1,39 @@
+---
+type Props = {
+  href?: string;
+  variant?: "filled" | "outlined" | "regular" | "text";
+  icon?: boolean;
+  class?: string;
+  [key: string]: any;
+};
+
+const {
+  href,
+  variant = "filled",
+  icon = false,
+  class: className = "",
+  ...props
+} = Astro.props;
+
+const classList = [];
+classList.push("button");
+classList.push(`${variant}-button`);
+if (icon) classList.push("icon-button");
+classList.push(...className.split(" "));
+---
+
+{
+  href ? (
+    <a class={classList.join(" ")} {href} {...props}>
+      <slot />
+    </a>
+  ) : (
+    <button class={classList.join(" ")} {...props}>
+      <slot />
+    </button>
+  )
+}
+
+<style lang="scss">
+  @use "./button.scss";
+</style>

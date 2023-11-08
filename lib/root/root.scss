@@ -19,3 +19,9 @@ body {
 
   font-family: var(--font-family);
 }
+
+:root {
+  --transition-duration: 0.2s;
+  --transition-timing: ease;
+  --transition: var(--transition-duration) var(--transition-timing);
+}

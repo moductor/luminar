@@ -1,11 +1,34 @@
 ---
+import { Button, Label } from "../../lib/astro";
+import styles from "../../lib/label/styles";
 import Card from "../components/Card.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Welcome to Astro.">
   <main>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <h1>
+      <Label style={styles.display1.black}>
+        Welcome to <span class="text-gradient">Astro</span>
+      </Label>
+    </h1>
+
+    <div
+      style={{
+        display: "flex",
+        gap: "0.5em",
+      }}
+    >
+      <Button variant="filled">Filled Button</Button>
+      <Button variant="filled" icon={true}>a</Button>
+      <Button variant="outlined">Outlined Button</Button>
+      <Button variant="outlined" icon={true}>a</Button>
+      <Button variant="regular">Regular Button</Button>
+      <Button variant="regular" icon={true}>a</Button>
+      <Button variant="text">Text Button</Button>
+      <Button variant="text" icon={true}>a</Button>
+    </div>
+
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
       />
