@@ -1,12 +1,16 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+import type { Config } from "tailwindcss";
+import { colors } from "./src/theme";
+
+const config: Config = {
   content: [
     "./src/**/*.{js,ts,jsx,tsx}",
     "!./src/**/*.stories.*",
     "!./src/stories/**/*",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors,
+    },
   },
   plugins: [],
   darkMode: [
@@ -17,3 +21,4 @@ export default {
     ],
   ],
 };
+export default config;

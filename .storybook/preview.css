@@ -1,6 +1,7 @@
 body {
-  --tw-color-light: #f9fafb;
-  --tw-color-dark: #020617;
+  --tw-color-accent: #39a7ff;
+  --tw-color-light: #fafafa;
+  --tw-color-dark: #222222;
 
   --color-content: #292c2e;
   --color-toolbar: #222425;
