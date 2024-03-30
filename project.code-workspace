@@ -7,6 +7,12 @@
       "source.organizeImports": "always",
     },
     "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[mdx]": {
+      "editor.defaultFormatter": "unifiedjs.vscode-mdx",
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": "never",
+      },
+    },
     "[svg]": {
       "editor.defaultFormatter": "jock.svg",
     },
