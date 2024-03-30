@@ -1,0 +1,44 @@
+import { Meta } from "@storybook/blocks";
+
+<Meta title="Introduction" />
+
+<header className="l-header">
+  <h1 className="sbl-sr-only">Luminar</h1>
+  <div className="l-logo" aria-hidden="true">
+    <img className="l-logo-light" src="img/logo/luminar-black.svg" alt="" />
+    <img className="l-logo-dark" src="img/logo/luminar-white.svg" alt="" />
+  </div>
+  <p>Design system used for building consistent and user-friendly experiences.</p>
+</header>
+
+Luminar is a design system used by Moductor to create a consistent user experience across all projects. It comes with a React component library. This documentation contains information about the design system itsself, as well as preview and documentation for React components.
+
+<style>
+{`
+  .l-header {
+    display: grid;
+    gap: 1rem;
+    margin-block-end: 3rem;
+  }
+
+  .l-header > * {
+    margin: 0;
+  }
+
+  .l-header .l-logo img {
+    height: 3.2rem;
+  }
+
+  .light .l-header .l-logo-dark {
+    display: none;
+  }
+
+  .dark .l-header .l-logo-light {
+    display: none;
+  }
+
+  .l-header p {
+    font-size: 1rem;
+  }
+`}
+</style>
