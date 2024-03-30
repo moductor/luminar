@@ -1,8 +1,8 @@
 "use client";
 
-import { getChildrenRecursive } from "@/utils";
 import { ReactNode, useEffect, useRef, useState } from "react";
 import { tv } from "tailwind-variants";
+import { getChildrenRecursive } from "../utils";
 
 const fixedClass = tv({
   base: "fixed inset-x-0 top-0 border-b-2 border-white border-opacity-10 bg-white bg-opacity-10 py-4 shadow-md backdrop-blur-[6px] transition-all",

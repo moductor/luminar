@@ -1,7 +1,7 @@
 "use client";
 
-import { usePropState } from "@/utils/usePropState";
 import { ChangeEvent } from "react";
+import { usePropState } from "../utils/usePropState";
 
 type Props = Omit<
   JSX.IntrinsicElements["input"],
