@@ -15,7 +15,13 @@ export default defineConfig({
       formats: ["es"],
     },
     rollupOptions: {
-      external: ["react", "react/jsx-runtime", "@heroicons/react"],
+      external: [
+        "@heroicons/react",
+        "react",
+        "react/jsx-runtime",
+        "tailwind-variants",
+        "tailwindcss",
+      ],
     },
   },
 });
