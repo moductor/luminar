@@ -1,0 +1,156 @@
+body {
+  --tw-color-light: #f9fafb;
+  --tw-color-dark: #020617;
+
+  --color-content: #292c2e;
+  --color-toolbar: #222425;
+  --color-borders: #fff2;
+  --table-border: 2px solid var(--color-borders);
+
+  color: var(--tw-color-dark);
+  background-color: var(--tw-color-light);
+}
+
+.dark body {
+  color: var(--tw-color-light);
+  background-color: var(--tw-color-dark);
+}
+
+/* loading screens */
+
+.dark .sb-loader {
+  border-color: #fff3;
+  border-top-color: #fffd;
+}
+
+.dark .sb-preparing-story,
+.dark .sb-preparing-docs,
+.dark .sb-nopreview {
+  background-color: var(--color-content) !important;
+}
+
+.dark .sb-preparing-docs .sb-previewBlock,
+.dark .sb-preparing-docs .sb-argstableBlock tbody tr td {
+  background-color: #fff2 !important;
+}
+
+.dark .sb-preparing-docs .sb-argstableBlock tbody tr:not(:first-child) {
+  border-top: 2px solid #fff2 !important;
+}
+
+.dark .sb-preparing-docs .sb-previewBlock .sb-previewBlock_icon,
+.dark .sb-preparing-docs .sb-argstableBlock tbody tr td :is(span, button) {
+  background-color: #fff4 !important;
+}
+
+/* Docs dark mode
+   %%%%%%%%%%%%%% */
+
+.dark .sbdocs-wrapper {
+  color-scheme: dark;
+  color: inherit !important;
+  background-color: var(--color-content) !important;
+}
+
+.dark .sbdocs-content *:not(.token):not(.rejt-name) {
+  color: inherit !important;
+}
+
+/* story preview */
+
+.dark .sbdocs-preview {
+  background-color: transparent !important;
+  border: 2px solid var(--color-borders);
+}
+
+.dark .sbdocs-preview .sb-bar {
+  background-color: var(--color-toolbar);
+  border-bottom: 1px solid var(--color-borders);
+}
+
+.dark .sbdocs-preview .docs-story {
+  background-color: var(--tw-color-dark);
+}
+
+.dark .sbdocs-preview .docs-story > :last-child {
+  background: none;
+}
+
+.dark .sbdocs-preview .docs-story .docblock-code-toggle {
+  background-color: var(--color-toolbar) !important;
+}
+
+.dark .sbdocs-preview .prismjs {
+  background-color: var(--color-toolbar) !important;
+  border-top: 1px solid var(--color-borders);
+}
+
+/* args table */
+
+.dark .docblock-argstable tbody > tr > * {
+  background-color: var(--color-toolbar) !important;
+}
+
+.dark .docblock-argstable tbody > tr > :first-of-type {
+  border-inline-start: var(--table-border) !important;
+}
+
+.dark .docblock-argstable tbody > tr:first-of-type > * {
+  border-block-start: var(--table-border) !important;
+}
+
+.dark .docblock-argstable tbody > tr > :last-of-type {
+  border-inline-end: var(--table-border) !important;
+}
+
+.dark .docblock-argstable tbody > tr:last-of-type > * {
+  border-block-end: var(--table-border) !important;
+}
+
+.dark .docblock-argstable tbody > tr > * button {
+  background-color: #fff2 !important;
+}
+
+.dark .docblock-argstable tbody > tr > * .rejt-tree span {
+  border: none !important;
+  background: none !important;
+}
+
+/* type or value highlight */
+
+.dark .docblock-argstable tbody td:not(:first-child) :not(label) > span[class] {
+  background-color: #fff2;
+  border: 1px solid #fff3;
+}
+
+/* inputs and textareas */
+
+.dark .docblock-argstable tbody input,
+.dark .docblock-argstable tbody textarea {
+  background-color: transparent;
+  border: 1px solid #fff3;
+}
+
+.dark .docblock-argstable tbody input::placeholder {
+  color: inherit !important;
+}
+
+/* true/false switcher */
+
+.dark
+  .docblock-argstable
+  tbody
+  label:has(input):has(span:nth-child(2)):has(span:nth-child(3)) {
+  background-color: #fff2;
+}
+
+.dark
+  .docblock-argstable
+  tbody
+  label:has(input):has(span:nth-child(2)):has(span:nth-child(3))
+  :is(
+    input:checked ~ span:last-of-type,
+    input:not(:checked) ~ span:first-of-type
+  ) {
+  background-color: #fff4;
+}

@@ -1,10 +1,8 @@
 import type { Preview } from "@storybook/react";
-import { ThemeVars, themes } from "@storybook/theming";
-import { logoDark, logoLight, title } from "./configLocal";
 
-const theme: Partial<ThemeVars> = {
-  brandTitle: title,
-};
+import "../src/globals.css";
+import "./preview.css";
+import { themeDark, themeLight } from "./theme";
 
 const preview: Preview = {
   parameters: {
@@ -16,16 +14,12 @@ const preview: Preview = {
     },
     darkMode: {
       current: "light",
-      light: {
-        ...themes.normal,
-        ...theme,
-        brandImage: logoLight,
-      } as ThemeVars,
-      dark: {
-        ...themes.dark,
-        ...theme,
-        brandImage: logoDark,
-      } as ThemeVars,
+      stylePreview: true,
+      classTarget: "html",
+      lightClass: "light",
+      darkClass: "dark",
+      light: themeLight,
+      dark: themeDark,
     },
     controls: {
       matchers: {
