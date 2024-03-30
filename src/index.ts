@@ -1,3 +1,4 @@
 import "./globals.css";
 
-export * as Box from "./Box";
+export * from "./components";
+export * from "./utils";
