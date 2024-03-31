@@ -1,0 +1,3 @@
+import{j as t}from"./jsx-runtime-BnIj46N_.js";import{useMDXComponents as e}from"./index-DLsXyOuj.js";import{M as i}from"./index-DlKX0c6e.js";import"./index-CsdIBAqE.js";import"./iframe-kwhKgLb1.js";import"../sb-preview/runtime.js";import"./index-CxKnHFOa.js";import"./index-5f0m1pej.js";import"./index-B_J8iUie.js";import"./index-B04q1QvB.js";import"./index-DrFu-skq.js";function r(n){const o={p:"p",...e(),...n.components};return t.jsxs(t.Fragment,{children:[t.jsx(i,{title:"Getting Started"}),`
+`,t.jsx("h1",{children:"Getting Started"}),`
+`,t.jsx(o.p,{children:"This library is not ready for production use yet."})]})}function h(n={}){const{wrapper:o}={...e(),...n.components};return o?t.jsx(o,{...n,children:t.jsx(r,{...n})}):r(n)}export{h as default};
