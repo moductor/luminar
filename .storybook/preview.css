@@ -71,6 +71,10 @@
   color: inherit !important;
 }
 
+.dark .sbdocs-content h2 {
+  border-bottom: 1px solid var(--color-borders) !important;
+}
+
 /* story preview */
 
 .dark .sbdocs-preview {
