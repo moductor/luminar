@@ -1,0 +1,21 @@
+import { Meta } from "@storybook/blocks";
+import LogoPreview from "../../stories/components/LogoPreview";
+import LogoLuminar from "./LogoLuminar";
+import StoryPreview from "../../stories/components/StoryPreview";
+import { Logo } from "./LogoLuminar.stories";
+
+<Meta title="Brand/Luminar" />
+
+# Luminar
+
+Luminar's brand consists just of a logo.
+
+<LogoPreview
+  colorA="#fafafa"
+  colorB="#222222"
+  render={({fg, style}) => <LogoLuminar color={fg} style={style} />}
+/>
+
+## Logo Component
+
+<StoryPreview title="Component" story={Logo} />
