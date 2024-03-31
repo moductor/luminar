@@ -14,3 +14,4 @@ export * as VerticalNavbar from "./VerticalNavbar";
 export * as VerticalNavbarButton from "./VerticalNavbarButton";
 export * as VerticalNavbarGroup from "./VerticalNavbarGroup";
 export * as VerticalNavbarSeparator from "./VerticalNavbarSeparator";
+export * from "./brand";

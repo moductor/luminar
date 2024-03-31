@@ -1,0 +1,31 @@
+import { Meta } from "@storybook/blocks";
+import LogoPreview from "../../stories/components/LogoPreview";
+import LogoMoductorFull from "./LogoMoductorFull";
+import LogoMoductorSymbol from "./LogoMoductorSymbol";
+import LogoMoductorType from "./LogoMoductorType";
+
+<Meta title="Brand/Moductor" />
+
+# Moductor
+
+This is a documenation for Moductor branding.
+
+## Logo
+
+<LogoPreview
+  colorA="#fafafa"
+  colorB="#39a7ff"
+  render={({fg, style}) => <LogoMoductorFull color={fg} style={style} />}
+/>
+
+<LogoPreview
+  colorA="#fafafa"
+  colorB="#39a7ff"
+  render={({fg, style}) => <LogoMoductorType color={fg} style={style} />}
+/>
+
+<LogoPreview
+  colorA="#fafafa"
+  colorB="#39a7ff"
+  render={({fg, style}) => <LogoMoductorSymbol color={fg} style={style} />}
+/>
