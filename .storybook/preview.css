@@ -1,18 +1,18 @@
-body {
+:is(body, .sbdocs-preview .docs-story) {
   --tw-color-accent: #39a7ff;
   --tw-color-light: #fafafa;
   --tw-color-dark: #222222;
-
-  --color-content: #292c2e;
-  --color-toolbar: #222425;
-  --color-borders: #fff2;
-  --table-border: 2px solid var(--color-borders);
 
   color: var(--tw-color-dark);
   background-color: var(--tw-color-light);
 }
 
-.dark body {
+.dark :is(body, .sbdocs-preview .docs-story) {
+  --color-content: #292c2e;
+  --color-toolbar: #222425;
+  --color-borders: #fff2;
+  --table-border: 2px solid var(--color-borders);
+
   color: var(--tw-color-light);
   background-color: var(--tw-color-dark);
 }
@@ -81,10 +81,6 @@ body {
 .dark .sbdocs-preview .sb-bar {
   background-color: var(--color-toolbar);
   border-bottom: 1px solid var(--color-borders);
-}
-
-.dark .sbdocs-preview .docs-story {
-  background-color: var(--tw-color-dark);
 }
 
 .dark .sbdocs-preview .docs-story > :last-child {
