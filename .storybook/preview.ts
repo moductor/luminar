@@ -9,7 +9,12 @@ const preview: Preview = {
     options: {
       storySort: {
         method: "alphabetical",
-        order: ["Introduction", "Getting Started"],
+        order: [
+          "Introduction",
+          "Getting Started",
+          "Brand",
+          ["Moductor", "Luminar"],
+        ],
       },
     },
     darkMode: {
