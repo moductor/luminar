@@ -14,7 +14,7 @@ jobs:
           npm run build
       - name: Prepare files for archiving
         env:
-          FILES: package.json package-lock.json dist src
+          FILES: package.json package-lock.json dist
         run: |
           mkdir luminar
           cp -r $FILES luminar
