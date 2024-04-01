@@ -50,7 +50,7 @@ export declare const logoMoductorClass: import('tailwind-variants').TVReturnType
         dark: string;
     };
 }>, unknown, unknown, undefined>>;
-export default function LogoMoductorFull({ variant, color, height, className, style, }: {
+export declare function LogoMoductorFull({ variant, color, height, className, style, }: {
     variant?: "auto" | "accent" | "light" | "dark";
     color?: string;
     height?: string;

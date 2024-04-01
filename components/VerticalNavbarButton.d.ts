@@ -71,5 +71,5 @@ type Props = {
     variant?: typeof navbarButtonClass.defaultVariants.color;
     getPathname?: () => string;
 };
-export default function VerticalNavbarButton({ href, onClick, children, variant: color, getPathname, }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function VerticalNavbarButton({ href, onClick, children, variant: color, getPathname, }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

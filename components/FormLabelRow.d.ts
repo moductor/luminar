@@ -6,5 +6,5 @@ type Props = {
     prefix?: ReactNode;
     suffix?: ReactNode;
 };
-export default function FormLabelRow({ label, children, prefix, suffix, }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function FormLabelRow({ label, children, prefix, suffix }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

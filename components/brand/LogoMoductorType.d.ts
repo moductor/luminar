@@ -1,6 +1,6 @@
 import { CSSProperties } from '../../../node_modules/react';
 
-export default function LogoMoductorType({ variant, color, height, className, style, }: {
+export declare function LogoMoductorType({ variant, color, height, className, style, }: {
     variant?: "auto" | "accent" | "light" | "dark";
     color?: string;
     height?: string;

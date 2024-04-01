@@ -4,5 +4,5 @@ export declare const formContentClass: import('tailwind-variants').TVReturnType<
 type Props = JSX.IntrinsicElements["div"] & {
     children?: ReactNode;
 };
-export default function FormContent({ className, children, ...props }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function FormContent({ className, children, ...props }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

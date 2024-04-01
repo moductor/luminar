@@ -42,5 +42,5 @@ type Props = JSX.IntrinsicElements["p"] & {
     title?: string;
     icon?: ReactNode;
 };
-export default function InfoBanner({ className, children, variant, title, icon, ...props }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function InfoBanner({ className, children, variant, title, icon, ...props }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

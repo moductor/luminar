@@ -43,7 +43,7 @@ export declare const logoLuminarClass: import('tailwind-variants').TVReturnType<
         dark: string;
     };
 }>, unknown, unknown, undefined>>;
-export default function LogoLuminar({ variant, color, height, className, style, }: {
+export declare function LogoLuminar({ variant, color, height, className, style, }: {
     variant?: "auto" | "light" | "dark";
     color?: string;
     height?: string;

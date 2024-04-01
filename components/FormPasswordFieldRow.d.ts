@@ -4,7 +4,7 @@ type Props = Omit<JSX.IntrinsicElements["input"], "type"> & {
     checkStrength?: boolean;
     onStrengthChange?: (strength: StrengthState) => unknown;
 };
-export default function FormPasswordFieldRow({ label, checkStrength, onStrengthChange, className, onChange, ...props }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function FormPasswordFieldRow({ label, checkStrength, onStrengthChange, className, onChange, ...props }: Props): import("react/jsx-runtime").JSX.Element;
 declare function getStrength(password: string): {
     state: number;
     strong: boolean;

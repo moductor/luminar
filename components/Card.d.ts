@@ -4,5 +4,5 @@ export declare const cardClass: import('tailwind-variants').TVReturnType<{} | {}
 type Props = JSX.IntrinsicElements["div"] & {
     children?: ReactNode;
 };
-export default function Card({ className, children, ...props }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function Card({ className, children, ...props }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

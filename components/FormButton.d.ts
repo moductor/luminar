@@ -4,5 +4,5 @@ export declare const formButtonClass: import('tailwind-variants').TVReturnType<{
 type Props = JSX.IntrinsicElements["button"] & {
     children?: ReactNode;
 };
-export default function FormButton({ className, children, ...props }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function FormButton({ className, children, ...props }: Props): import("react/jsx-runtime").JSX.Element;
 export {};

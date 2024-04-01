@@ -1,1 +1,1 @@
-export default function VerticalNavbarSeparator(): import("react/jsx-runtime").JSX.Element;
+export declare function VerticalNavbarSeparator(): import("react/jsx-runtime").JSX.Element;

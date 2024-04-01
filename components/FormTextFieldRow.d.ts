@@ -5,5 +5,5 @@ type Props = JSX.IntrinsicElements["input"] & {
     prefix?: ReactNode;
     suffix?: ReactNode;
 };
-export default function FormTextFieldRow({ label, prefix, suffix, ...props }: Props): import("react/jsx-runtime").JSX.Element;
+export declare function FormTextFieldRow({ label, prefix, suffix, ...props }: Props): import("react/jsx-runtime").JSX.Element;
 export {};
