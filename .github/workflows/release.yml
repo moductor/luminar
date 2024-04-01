@@ -21,11 +21,11 @@ jobs:
       - name: Archive the built package
         uses: TheDoctor0/zip-release@0.7.6
         with:
-          type: zip
+          type: tar
           path: luminar
-          filename: release.zip
+          filename: release.tar.gz
       - name: Create a release and publish the archive
         uses: ncipollo/release-action@v1.14.0
         with:
-          artifacts: release.zip
+          artifacts: release.tar.gz
           token: ${{ secrets.GITHUB_TOKEN }}
