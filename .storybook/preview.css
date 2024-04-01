@@ -75,6 +75,24 @@
   border-bottom: 1px solid var(--color-borders) !important;
 }
 
+.dark .sbdocs-content .docblock-source {
+  background-color: var(--color-borders);
+}
+
+.dark .sbdocs-content .docblock-source .prismjs {
+  background-color: var(--color-toolbar);
+}
+
+.dark .sbdocs-content .docblock-source > :last-child,
+.dark .sbdocs-preview .docs-story > :last-child {
+  background: none;
+}
+
+.dark .sbdocs-content .docblock-source button,
+.dark .sbdocs-preview .docs-story .docblock-code-toggle {
+  background-color: var(--color-borders) !important;
+}
+
 /* story preview */
 
 .dark .sbdocs-preview {
@@ -85,14 +103,6 @@
 .dark .sbdocs-preview .sb-bar {
   background-color: var(--color-toolbar);
   border-bottom: 1px solid var(--color-borders);
-}
-
-.dark .sbdocs-preview .docs-story > :last-child {
-  background: none;
-}
-
-.dark .sbdocs-preview .docs-story .docblock-code-toggle {
-  background-color: var(--color-toolbar) !important;
 }
 
 .dark .sbdocs-preview .prismjs {
