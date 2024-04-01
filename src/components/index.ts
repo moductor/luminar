@@ -1,3 +1,5 @@
+import "../globals.css";
+
 export * from "./Card";
 export * from "./FixedBanner";
 export * from "./FormButton";
