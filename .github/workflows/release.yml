@@ -12,7 +12,7 @@ jobs:
         run: |
           npm install
           npm run build
-          rm -rf node_modules
+          rm -rf .git node_modules
       - name: Archive the built package
         uses: TheDoctor0/zip-release@0.7.6
         with:
