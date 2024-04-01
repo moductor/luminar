@@ -5,7 +5,7 @@ type Props = {
   children?: ReactNode;
 };
 
-export default function FormGroup({ title, children }: Props) {
+export function FormGroup({ title, children }: Props) {
   return (
     <div className="grid gap-3">
       {title && (

@@ -1,4 +1,4 @@
-export * as LogoLuminar from "./LogoLuminar";
-export * as LogoMoductorFull from "./LogoMoductorFull";
-export * as LogoMoductorSymbol from "./LogoMoductorSymbol";
-export * as LogoMoductorType from "./LogoMoductorType";
+export * from "./LogoLuminar";
+export * from "./LogoMoductorFull";
+export * from "./LogoMoductorSymbol";
+export * from "./LogoMoductorType";

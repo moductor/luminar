@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import LogoLuminar from "./LogoLuminar";
+import { LogoLuminar } from "./LogoLuminar";
 
 const meta = {
   title: "Brand/Luminar",

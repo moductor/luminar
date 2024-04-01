@@ -10,7 +10,7 @@ type Props = Omit<
   label?: string;
 };
 
-export default function FormCheckboxRow({
+export function FormCheckboxRow({
   label,
   checked,
   defaultChecked,

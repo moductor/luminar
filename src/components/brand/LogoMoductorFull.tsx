@@ -16,7 +16,7 @@ export const logoMoductorClass = tv({
   },
 });
 
-export default function LogoMoductorFull({
+export function LogoMoductorFull({
   variant,
   color,
   height,

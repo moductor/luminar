@@ -19,7 +19,7 @@ type Props = JSX.IntrinsicElements["p"] & {
   icon?: ReactNode;
 };
 
-export default function InfoBanner({
+export function InfoBanner({
   className,
   children,
   variant,

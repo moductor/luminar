@@ -5,7 +5,7 @@ type Props = {
   children?: ReactNode;
 };
 
-export default function VerticalNavbar({ title, children }: Props) {
+export function VerticalNavbar({ title, children }: Props) {
   return (
     <div className="grid min-w-32 gap-6">
       {title && <p className="text-lg">{title}</p>}

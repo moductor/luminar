@@ -1,7 +1,7 @@
 import { CSSProperties } from "react";
 import { logoMoductorClass } from "./LogoMoductorFull";
 
-export default function LogoMoductorSymbol({
+export function LogoMoductorSymbol({
   variant,
   color,
   height,

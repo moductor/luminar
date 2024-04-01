@@ -7,7 +7,7 @@ export const cardClass = tv({
 
 type Props = JSX.IntrinsicElements["div"] & { children?: ReactNode };
 
-export default function Card({ className, children, ...props }: Props) {
+export function Card({ className, children, ...props }: Props) {
   return (
     <div className={cardClass({ className })} {...props}>
       {children}

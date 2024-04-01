@@ -22,7 +22,7 @@ type Props = JSX.IntrinsicElements["div"] & {
   children?: ReactNode;
 };
 
-export default function FixedBanner({
+export function FixedBanner({
   resolvePosition = true,
   className,
   children,

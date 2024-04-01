@@ -30,7 +30,7 @@ type Props = {
   getPathname?: () => string;
 };
 
-export default function VerticalNavbarButton({
+export function VerticalNavbarButton({
   href,
   onClick,
   children,

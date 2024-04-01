@@ -7,7 +7,7 @@ export const formTextFieldClass = tv({
 
 type Props = Omit<JSX.IntrinsicElements["input"], "ref">;
 
-export default forwardRef<HTMLInputElement, Props>(function FormTextField(
+export const FormTextField = forwardRef<HTMLInputElement, Props>(function (
   { className, ...props }: Props,
   ref,
 ) {

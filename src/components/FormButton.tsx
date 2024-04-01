@@ -7,7 +7,7 @@ export const formButtonClass = tv({
 
 type Props = JSX.IntrinsicElements["button"] & { children?: ReactNode };
 
-export default function FormButton({ className, children, ...props }: Props) {
+export function FormButton({ className, children, ...props }: Props) {
   return (
     <button className={formButtonClass({ className })} {...props}>
       {children}

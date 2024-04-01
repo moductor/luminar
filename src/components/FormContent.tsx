@@ -7,7 +7,7 @@ export const formContentClass = tv({
 
 type Props = JSX.IntrinsicElements["div"] & { children?: ReactNode };
 
-export default function FormContent({ className, children, ...props }: Props) {
+export function FormContent({ className, children, ...props }: Props) {
   return (
     <div className={formContentClass({ className })} {...props}>
       {children}

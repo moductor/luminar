@@ -5,7 +5,7 @@ type Props = {
   children?: ReactNode;
 };
 
-export default function VerticalNavbarGroup({ title, children }: Props) {
+export function VerticalNavbarGroup({ title, children }: Props) {
   if (!children) return <></>;
 
   return (

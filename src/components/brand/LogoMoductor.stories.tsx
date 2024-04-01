@@ -1,8 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import React from "react";
-import LogoMoductorFull from "./LogoMoductorFull";
-import LogoMoductorSymbol from "./LogoMoductorSymbol";
-import LogoMoductorType from "./LogoMoductorType";
+import { LogoMoductorFull } from "./LogoMoductorFull";
+import { LogoMoductorSymbol } from "./LogoMoductorSymbol";
+import { LogoMoductorType } from "./LogoMoductorType";
 
 const meta = {
   title: "Brand/Moductor",

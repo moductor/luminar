@@ -15,7 +15,7 @@ export const logoLuminarClass = tv({
   },
 });
 
-export default function LogoLuminar({
+export function LogoLuminar({
   variant,
   color,
   height,

@@ -3,8 +3,8 @@
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/16/solid";
 import { ChangeEvent, useEffect, useState } from "react";
 import { tv } from "tailwind-variants";
-import FormLabelRow from "./FormLabelRow";
-import FormTextField from "./FormTextField";
+import { FormLabelRow } from "./FormLabelRow";
+import { FormTextField } from "./FormTextField";
 
 const fieldClass = tv({
   base: "pr-8",
@@ -16,7 +16,7 @@ type Props = Omit<JSX.IntrinsicElements["input"], "type"> & {
   onStrengthChange?: (strength: StrengthState) => unknown;
 };
 
-export default function FormPasswordFieldRow({
+export function FormPasswordFieldRow({
   label,
   checkStrength = false,
   onStrengthChange,
