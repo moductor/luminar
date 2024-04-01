@@ -1,7 +1,16 @@
 import { Meta } from "@storybook/blocks";
+import { version } from "../../package.json";
 
 <Meta title="Getting Started" />
 
-<h1>Getting Started</h1>
+# Getting Started
 
-This library is not ready for production use yet.
+Luminar is not published to NPM and we don't plan to do it. However, you can install it using a tarball we generate for every release.
+
+To install Luminar, run the command bellow:
+
+```
+npm install --save https://github.com/moductor/luminar/releases/download/<VERSION>/release.tar.gz
+```
+
+Don't forget to replace the text `<VERSION>` with a version tag. <strong>Current version: <code>v{version}</code></strong>
