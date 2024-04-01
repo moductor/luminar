@@ -12,11 +12,17 @@ jobs:
         run: |
           npm install
           npm run build
-          rm -rf .git node_modules
+      - name: Prepare files for archiving
+        env:
+          FILES: package.json package-lock.json dist src
+        run: |
+          mkdir luminar
+          cp -r $FILES luminar
       - name: Archive the built package
         uses: TheDoctor0/zip-release@0.7.6
         with:
           type: zip
+          path: luminar
           filename: release.zip
       - name: Create a release and publish the archive
         uses: ncipollo/release-action@v1.14.0
